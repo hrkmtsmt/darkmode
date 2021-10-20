@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import { ThemeSwitch } from "@src/components/ThemeSwitch";
 
 const Home: NextPage = () => {
-  return <div>a</div>;
+  return <ThemeSwitch />;
 };
 
 export default Home;

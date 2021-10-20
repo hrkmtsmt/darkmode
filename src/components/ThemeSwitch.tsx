@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const Track = styled.button`
@@ -14,7 +14,7 @@ const Track = styled.button`
   z-index: 999;
 `;
 
-const Thumb = styled.button`
+const Thumb = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -49,6 +49,7 @@ const ThumbInner = styled.div`
 `;
 
 export const ThemeSwitch = () => {
+  const [isDark, setIsDark] = useState(false);
   return (
     <Track>
       <Thumb>
