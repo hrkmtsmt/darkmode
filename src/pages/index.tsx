@@ -1,8 +1,7 @@
-import type { NextPage } from "next";
-import { ThemeSwitch } from "@src/components/ThemeSwitch";
 
-const Home: NextPage = () => {
-  return <ThemeSwitch />;
-};
+import React from "react";
+import { Header } from "@src/components/layout/Header";
 
-export default Home;
+export default function Home() {
+  return <Header />;
+}
