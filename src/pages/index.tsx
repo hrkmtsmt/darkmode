@@ -1,8 +1,6 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import React from "react";
+import { Header } from "@src/components/layout/Header";
 
-const Home: NextPage = () => {
-  return <div>a</div>;
-};
-
-export default Home;
+export default function Home() {
+  return <Header />;
+}
