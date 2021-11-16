@@ -12,7 +12,7 @@ export type Props = {
   cat?: string;
   dir?: string;
   src?: string;
-  href: string;
+  href?: string;
   cta?: string;
   alt?: string;
   label?: string;

@@ -1,7 +1,12 @@
-
 import React from "react";
-import { Header } from "@src/components/layout/Header";
+import { Layout } from "@src/components/layout/Layout";
+
+import { ThemeSwitch } from "@src/components/ThemeSwitch";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <Layout>
+      <ThemeSwitch />
+    </Layout>
+  );
 }

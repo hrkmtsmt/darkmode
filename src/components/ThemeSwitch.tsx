@@ -27,6 +27,11 @@ const Thumb = styled.div`
   animation: a-sun-moon 1.6s linear infinite alternate;
   position: relative;
   overflow: hidden;
+  &[aria-pressed="true"] {
+    margin: 0 0 0 40px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
 `;
 
 const ThumbInner = styled.div`
@@ -51,8 +56,8 @@ const ThumbInner = styled.div`
 export const ThemeSwitch = () => {
   const [isDark, setIsDark] = useState(false);
   return (
-    <Track>
-      <Thumb>
+    <Track onClick={() => setIsDark(!isDark)}>
+      <Thumb aria-pressed={isDark}>
         <ThumbInner></ThumbInner>
       </Thumb>
     </Track>
